@@ -2,8 +2,8 @@
 
 > Practical, production-minded runbooks for installing and configuring container runtimes on real hardware.
 
-**Author:** Rafael Gross
-**Role:** Cloud Operations Engineer · AWS · GCP · Kubernetes
+**Author:** Rafael Gross  
+**Role:** Cloud Operations Engineer · AWS · GCP · Kubernetes  
 **Last Updated:** April 2026
 
 ---
@@ -39,6 +39,13 @@ Where official documentation was outdated, incomplete, or simply wrong for speci
 | [Install LXD](runbooks/lxd/linux-mint-20.2-amd64/) | LXD 5.21 LTS | Linux Mint 20.2 (Uma) | amd64 |
 | [Install LXD](runbooks/lxd/ubuntu-server-24.04-arm64/) | LXD 5.21 LTS | Ubuntu Server 24.04 LTS | arm64 |
 
+### Podman
+
+| Runbook | Covers | Platform | Architecture |
+|---------|--------|----------|--------------|
+| [Podman — Linux Mint 20.2](runbooks/podman/linux-mint-20.2-amd64/) | Install · Image Ops · Container Ops | Linux Mint 20.2 (Uma) | amd64 |
+| [Podman — Ubuntu Server 24.04](runbooks/podman/ubuntu-server-24.04-arm64/) | Install · Image Ops · Container Ops | Ubuntu Server 24.04 LTS | arm64 |
+
 > Additional runbooks will be added as they are completed and validated.
 
 ---
@@ -50,19 +57,18 @@ container-runtime-runbooks-homelabs/
 └── runbooks/
     ├── cri-o/
     │   ├── linux-mint-20.2-amd64/
-    │   │   └── README.md
     │   └── ubuntu-server-24.04-arm64/
-    │       └── README.md
     ├── crictl/
     │   ├── linux-mint-20.2-amd64/
-    │   │   └── README.md
     │   └── ubuntu-server-24.04-arm64/
-    │       └── README.md
-    └── lxd/
+    ├── lxd/
+    │   ├── linux-mint-20.2-amd64/
+    │   └── ubuntu-server-24.04-arm64/
+    └── podman/
         ├── linux-mint-20.2-amd64/
-        │   └── README.md
+        │   └── README.md  ← install + image ops + container ops
         └── ubuntu-server-24.04-arm64/
-            └── README.md
+            └── README.md  ← install + image ops + container ops
 ```
 
 ---
